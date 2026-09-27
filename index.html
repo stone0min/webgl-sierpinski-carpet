@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Sierpinski Carpet</title>
+  <link rel="stylesheet" href="style.css">
+  <script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec2 aPosition;
+
+void main() {
+  gl_Position = vec4(aPosition, 0.0, 1.0);
+}
+  </script>
+  <script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+uniform vec4 uColor;
+
+void main() {
+  gl_FragColor = uColor;
+}
+  </script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h2>Sierpinski Carpet</h2>
+
+  <div>
+    <label for="depth">분할 횟수:</label>
+    <input id="depth" type="range" min="0" max="5" step="1" value="3">
+    <span id="depthValue">3</span>
+  </div>
+
+  <div>
+    <span>색상:</span>
+    <label for="red">R</label>
+    <input id="red" type="number" min="0" max="255" value="70">
+    <label for="green">G</label>
+    <input id="green" type="number" min="0" max="255" value="110">
+    <label for="blue">B</label>
+    <input id="blue" type="number" min="0" max="255" value="230">
+  </div>
+
+  <canvas id="gl-canvas" width="600" height="600">WebGL을 지원하는 브라우저가 필요합니다.</canvas>
+  <p id="message"></p>
+</body>
+</html>
