@@ -30,4 +30,5 @@ python3 -m http.server 8000
 - `index.html`: 화면 요소와 GLSL 셰이더
 - `app.js`: 재귀 생성과 WebGL 렌더링
 - `style.css`: 화면 스타일
-- `REPORT.md`: 제출 보고서 초안
+- `REPORT.md`: 보고서 원문
+- `output/pdf/sierpinski-carpet-report.pdf`: 제출용 PDF 보고서
