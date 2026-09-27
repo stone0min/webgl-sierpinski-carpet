@@ -93,7 +93,7 @@ R, G, B 입력값을 변경하면 기하 데이터는 유지되고 단편 셰이
 
 ## 10. 소스 코드
 
-GitHub 저장소: `https://github.com/사용자이름/저장소이름`
+GitHub 저장소: `https://github.com/stone0min/webgl-sierpinski-carpet`
 
 ## 11. AI 도구 사용
 
